@@ -1,0 +1,17 @@
+<canvas class="render" id="renderCanvas"></canvas>
+<div class="page">
+    <div class="container">
+        @if(success) {
+            <div class="success-container">
+                <h2 class="success">YIPPIE :)</h2>
+                <img src="../assets/amore-love-you.gif"/>
+            </div>
+        } @else {
+            <h2 class="question">Will you be my valentine?</h2>
+            <div class="btn-group">
+                <button class="yes-btn" id="yes" (pointerdown)="successClicked()">Yes</button>
+                <button class="no-btn" id="no" (mouseover)="randomPosition()">No</button>
+            </div>
+        }
+    </div>
+</div>
